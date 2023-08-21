@@ -24,4 +24,4 @@ let isLoggedIn = false //boolean data type
 */
 
 // console.table([Uname, age, isLoggedIn, State])
-console.log(typeof 112.5) //used to determine the datatype
+console.log(typeof 112) //used to determine the datatype
