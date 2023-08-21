@@ -8,7 +8,7 @@
 
 // console.log("Malav Patel")
 
-let Uname = 'Malav Patel' //data type is string 
+let Uname = 'Malav' //data type is string 
 let age = 19 //data type is number
 let State = null // a standalone value is 
 let isLoggedIn = false //boolean data type 
