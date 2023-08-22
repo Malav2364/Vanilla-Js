@@ -16,10 +16,10 @@ let score  =  'Malav'
     false => 0
 */
 
-let isLoggedIn = 'Malav'
+// let isLoggedIn = 'Malav'
 
-let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn);
+// let booleanIsLoggedIn = Boolean(isLoggedIn)
+// console.log(booleanIsLoggedIn);
 
 //conversion in boolean 
 
@@ -29,8 +29,49 @@ console.log(booleanIsLoggedIn);
     "Malav" => true
 */
 
-let aNumber = 33
+// let aNumber = 33
 
-let Snumber = String(aNumber)
-console.log(Snumber);
-console.log(typeof Snumber);
+// let Snumber = String(aNumber)
+// console.log(Snumber);
+// console.log(typeof Snumber);
+
+
+//******************* Operations *********************
+// let value = 3
+// let negValue = -value
+// console.log(negValue)
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2**2)
+// console.log(2/2)
+// console.log(2%2)
+
+let str1 = 'hello'
+let str2 = ' Malav'
+
+let str3 = str1 + str2
+
+// console.log(str3);
+// console.log(1 + 2);
+// console.log('1' + 2);
+// console.log(1 + '2');
+// console.log('1' + '2' + 3 + 2);
+// console.log(1 + 2 + '3');
+// console.log((1+2) * (4-2));
+
+console.log(+true); //op is 1 
+// console.log(true+); //op is error
+
+console.log(+"");
+
+// let num1, num2, num3
+
+// num1 = num2 = num3 = 2+2             //bakwas bhangar bekar
+
+// console.log(num3);
+
+let gameCounter = 100
+
+++gameCounter;
+
+console.log(gameCounter);
