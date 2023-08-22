@@ -27,7 +27,7 @@ const myFunction = function(){
     console.log('Hello World!!');
 }
 
-console.log(typeof );
+console.log(typeof myFunction);
 
 
 //Reference Types or Non Primitive (direct reference in the memory)
