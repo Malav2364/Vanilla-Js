@@ -75,3 +75,7 @@ let gameCounter = 100
 ++gameCounter;
 
 console.log(gameCounter);
+
+let x = 3;
+const y = x++;
+console.log(y);
