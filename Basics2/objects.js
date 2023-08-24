@@ -1,4 +1,4 @@
-// objects (singleton)
+// objects (Non-Singleton)
 
 // objects literals
 
