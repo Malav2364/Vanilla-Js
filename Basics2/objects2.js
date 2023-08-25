@@ -61,3 +61,21 @@ console.log(Object.values(mappUser)); //to get values of the objects
 console.log(Object.entries(mappUser)); //to get key value pairs  of the objects
 
 console.log(mappUser.hasOwnProperty('isLogged'));// to check weather the property is there or not on the object
+
+const Course = {
+    coursename: "JS",
+    price: "999",
+    courseInst: "Apun"
+}
+
+//no log or . notstion
+
+//de structure of the object can name anything from the key
+const {courseInst: ins} = Course   //better way to access value from the objects
+console.log(ins);
+
+// {
+//     "name":"malav",
+//     "price":"free",
+//     "cName":"js in hindi"
+// }
