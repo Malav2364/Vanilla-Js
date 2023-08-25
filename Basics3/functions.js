@@ -1,10 +1,10 @@
 //functions
 function myFunction(){
-    console.log("M");
-    console.log("A");
-    console.log("L");
-    console.log("A");
-    console.log("V");
+    // console.log("M");
+    // console.log("A");
+    // console.log("L");
+    // console.log("A");
+    // console.log("V");
 }
 myFunction //Reference
 myFunction() //execute function
@@ -33,4 +33,33 @@ function loginUserMsg (username = "Unknown User Podre") {    //we pass a default
 }
 
 // console.log(loginUserMsg("Malav"))
-console.log(loginUserMsg())
+// console.log(loginUserMsg())
+
+function calculateCartPrice(...num1){  //rest operator used in function to pack all values and show in array 
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500, 2000))
+
+const user = {
+    username:"Malav",
+    price:199
+}
+
+function handleObject(anyObj){
+    console.log(`Username is ${anyObj.username} and price is ${anyObj.price}`)
+}
+
+// handleObject(user)
+handleObject({
+    username:"Sam",
+    price:399
+})
+
+const myNewArray = [100, 200, 300, 400, 500]
+
+function retSecond(getArray){
+    return getArray[1]
+}
+
+console.log(retSecond([500, 700, 800, 900]))
