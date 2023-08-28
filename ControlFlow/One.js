@@ -42,7 +42,24 @@ if (balance < 500) {
  if (userLoggedIn && debitCard && 2 == 2) {          //&& and operator 
     console.log("Allowed To buy courses")
  }
-
+                                                                                    //logical operator
  if (loggedInFromGoogle || loggedInFromEmail) {     // || this is OR operator 
     console.log("User LoggedIn")
  }
+
+ //nullish coalescing operator (??)
+
+let val1;
+// val1 = 5 ?? 10
+// val1 = null ?? 10
+// val1 = undefined ?? null
+// val1 = undefined ?? 15
+// val1 = null ?? 10 ?? 20  // here the first value is assigned to the var if there is nested colesence operator
+console.log(val1);
+
+//terniary operator
+// condition ? true : false
+
+const Price = 100
+
+Price <= 80 ? console.log("Less than 80") : console.log("More than 80");
