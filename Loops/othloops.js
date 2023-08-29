@@ -15,7 +15,7 @@ for (const greet of greetings) {
 
 const map = new Map()
 map.set('IN', "India")
-map.set('US', "United States Of America")   //are iteratable 
+map.set('US', "United States Of America")   //are iteratable with for of but they are not iteratable 
 map.set('FR', "France")
 
 // console.log(map)
@@ -30,6 +30,6 @@ const myObj = {
     game3: "Minecraft"
 }
 
-for (const [key, value] of myObj) {
-    console.log(key, value)
-}
+// for (const [key, value] of myObj) {
+//     // console.log(key, value)
+// }
