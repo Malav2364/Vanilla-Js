@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background: #212121;">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <li><img src="https://images.pexels.com/photos/2928024/pexels-photo-2928024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photoshop" id="owl"></li>
+            <li><img src="https://images.pexels.com/photos/1615678/pexels-photo-1615678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
+            <li><img src="https://images.pexels.com/photos/6061291/pexels-photo-6061291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
+            <li><img src="https://images.pexels.com/photos/11956406/pexels-photo-11956406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
+            <li><a href="https://google.com" id="google" style="color: aliceblue;">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    //attachEvent() used in internet explorer old version bolte
+    //jquery  -  onEventListener is used 
+    //types(keyboard), timestamp, default prevented(default behaviour can be changed)
+    //target, toElement, src element, currentTarget
+    //clientX, clientY, screenX, screenY
+    //alt key , ctrlkey, shift key, keycode
+
+document.getElementById('images').addEventListener('click', function(e){
+    // console.log('clicked inside the ul');
+},false)
+               //if true then top to bottom called capturing other are bubbling
+document.getElementById('owl').addEventListener('click', function(e){
+    // console.log('owl clicked');
+    e.stopPropagation() //it will only show the child element not the parent one
+},false)
+
+document.getElementById('google').addEventListener('click', function(e){
+    e.preventDefault()
+    e.stopPropagation() 
+    // console.log('google clicked')
+},false)
+
+document.querySelector('#images').addEventListener('click', function(e){
+    console.log(e.target.tagName)
+    if (e.target.tagName === 'IMG') {
+        console.log(e.target.id)
+        let removeIt = e.target.parentNode
+        removeIt.remove()   
+    }
+},false)
+
+
+
+    // const owncl = document.getElementById('owl')
+    // owncl.addEventListener('click', function(e){
+    //    console.log(e);
+    // },false) //event bubbling capturing propagation etc
+
+    
+</script>
+</html>
