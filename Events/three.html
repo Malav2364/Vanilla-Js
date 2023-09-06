@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Malav</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <h1>Js Malav</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate = function(str){
+        console.log(str, Date.now());
+    }
+   let intervalId = {}   //setInterval(sayDate, 1000, "Hello")
+//    clearInterval(intervalId)
+
+   document.querySelector('#start').addEventListener('click', function(){
+    console.log("Started");
+    let intervalId = setInterval(sayDate, 1000, "Hello")  
+   })
+
+   clearInterval(intervalId)
+
+</script>
+</html>
