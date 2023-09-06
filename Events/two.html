@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <h1>Malav Patel</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayMalav = function () {
+        console.log("Malav");
+    }
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = 'Radhe Radhe !!'
+    }
+    const changeMe = setTimeout(sayMalav, 2000)//make a function and give a timestamp in ms
+
+    // clearTimeout(changeMe)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log('Stopped')//it clears the timeout and prevents it from running
+    })
+</script>
+</html>
